@@ -9,7 +9,7 @@ val criterion = AbsCriterion[Float]()
 criterion = AbsCriterion()
 ```
 
-Description
+measures the mean absolute value of the element-wise difference between input
 
 **Scala example:**
 ```scala
