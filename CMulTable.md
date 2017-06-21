@@ -9,7 +9,7 @@ val model = CMulTable[Float]()
 model = CMulTable()
 ```
 
-Description
+Takes a table of Tensors and outputs the multiplication of all of them.
 
 **Scala example:**
 ```scala
