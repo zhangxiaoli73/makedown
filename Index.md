@@ -9,7 +9,7 @@ val model = Index[Float](1)
 model = Index(1)
 ```
 
-Description
+Applies the Tensor index operation along the given dimension.
 
 **Scala example:**
 ```scala
