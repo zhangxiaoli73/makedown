@@ -50,5 +50,23 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 ```
 **Python example:**
 ```python
-Python Code
+hiddenSize = 4
+inputSize = 6
+outputSize = 5
+seqLength = 5
+batchSize = 1
+               
+input = np.random.randn(batchSize, seqLength, inputSize)
+
+rec = Recurrent(hiddenSize)
+model = Sequential().add(rec.add(LSTMPeephole(inputSize, hiddenSize))).add(TimeDistributed(Linear(hiddenSize, outputSize)))
+output = model.forward(input)
+```
+output is
+```
+array([[[ 0.38146877,  0.08686808, -0.16959271, -0.13243586, -0.02830471],
+        [ 0.26316535,  0.06359337, -0.22447851, -0.06319767, -0.13872764],
+        [ 0.42890453,  0.17883307, -0.20073381, -0.06245731, -0.04297322],
+        [ 0.29129934,  0.17688879, -0.2768988 ,  0.11385346, -0.23123962],
+        [ 0.40386844,  0.21273491, -0.2435573 , -0.05527414, -0.04689732]]], dtype=float32)
 ```
