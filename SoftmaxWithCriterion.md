@@ -13,7 +13,15 @@ Description
 
 **Scala example:**
 ```scala
-Scala code
+import com.intel.analytics.bigdl.nn._
+import com.intel.analytics.bigdl.tensor.Tensor
+
+val input = Tensor[Float](1, 5, 2, 3).rand()
+val target = Tensor(Storage((Array(2.0f, 4.0f, 2.0f, 4.0f, 1.0f, 2.0f))).resize(1, 1, 2, 3)
+  
+val normMode = NormMode.apply(2)
+val model = SoftmaxWithCriterion[Float](normalizeMode = normMode)
+val output = model.forward(input, target)
 ```
 
 **Python example:**
