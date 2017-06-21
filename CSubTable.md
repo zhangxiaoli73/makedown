@@ -9,7 +9,7 @@ val model = CSubTable[Float]()
 model = CSubTable()
 ```
 
-Description
+Takes a table with two Tensor and returns the component-wise subtraction between them.
 
 **Scala example:**
 ```scala
