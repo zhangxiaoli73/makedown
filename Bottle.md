@@ -9,7 +9,7 @@ val model = Bottle[Float](Linear[Float](10, 2), 2, 2)
 model = Bottle(Linear(10, 2), 2, 2)
 ```
 
-Description
+Bottle allows varying dimensionality input to be forwarded through any module that accepts input of nInputDim dimensions, and generates output of nOutputDim dimensions.
 
 **Scala example:**
 ```scala
