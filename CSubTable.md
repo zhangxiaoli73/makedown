@@ -6,7 +6,7 @@ val model = CSubTable[Float]()
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = CSubTable()
 ```
 
 Description
@@ -37,5 +37,13 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+model = CSubTable()
+input1 = np.random.randn(5)
+input2 = np.random.randn(5)
+input = [input1, input2]
+output = model.forward(input)
+```
+output is
+```
+array([-1.15087152,  0.6169951 ,  2.41840839,  1.34374809,  1.39436531], dtype=float32)
 ```
