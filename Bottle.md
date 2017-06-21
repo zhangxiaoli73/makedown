@@ -6,7 +6,7 @@ val model = Bottle[Float](Linear[Float](10, 2), 2, 2)
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = Bottle(Linear(10, 2), 2, 2)
 ```
 
 Description
