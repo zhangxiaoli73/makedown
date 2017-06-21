@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = Bottle[Float](Linear[Float](10, 2), 2, 2)
 ```
 **Python:**
 ```python
@@ -16,10 +16,10 @@ Description
 import com.intel.analytics.bigdl.nn._
 import com.intel.analytics.bigdl.tensor.Tensor
 
-val module = Bottle[Float](Linear[Float](10, 2), 2, 2)
-module.add(Linear(10, 2))
+val model = Bottle[Float](Linear[Float](10, 2), 2, 2)
+model.add(Linear(10, 2))
 val input = Tensor[Float](4, 5, 10).rand()
-val output = module.forward(input)
+val output = model.forward(input)
 ```
 output is
 ```
@@ -57,5 +57,35 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+model = Bottle(Linear(10, 2), 2, 2)
+model.add(Linear(10, 2))
+
+input = np.random.randn(4, 5, 10)
+model.forward(input)
+```
+output is
+```
+array([[[-0.27106649,  0.14462236],
+        [-0.28050202,  0.52495712],
+        [-0.3351084 ,  1.02605069],
+        [-0.18306208,  0.17746207],
+        [ 0.62624407, -0.01642358]],
+
+       [[-0.49295783,  0.58246708],
+        [ 0.25713843,  0.69936216],
+        [ 0.42159486,  0.89629161],
+        [-1.32501745, -0.010911  ],
+        [-0.06844211,  0.38141996]],
+
+       [[-0.60752791, -0.01978694],
+        [ 0.58144319,  1.03134239],
+        [ 0.48065221, -0.86170584],
+        [-0.51053059,  1.06431556],
+        [ 0.46424878, -0.29169011]],
+
+       [[-0.00934486,  0.68141061],
+        [ 0.15537724, -0.09281653],
+        [-0.23529468,  0.78246176],
+        [-0.348032  , -0.40045774],
+        [-1.087569  ,  1.19862282]]], dtype=float32)
 ```
