@@ -38,5 +38,9 @@ input = np.array([0.9682213801388531,
 -0.21781499692588918,
 -1.02721844006879])
 target = np.array([1, 2, 3, 2, 1])
-criterion.forward(input, target)
+output=criterion.forward(input, target)
+```
+output is
+```
+1.7756758
 ```
