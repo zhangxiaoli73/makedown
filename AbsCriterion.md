@@ -28,9 +28,6 @@ output: Float = 0.33056465
 
 **Python example:**
 ```python
-import findspark
-findspark.init()
-
 criterion = AbsCriterion()
 input = np.array([0.9682213801388531,
 0.35258855644097503,
