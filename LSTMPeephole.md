@@ -9,7 +9,26 @@ val model = LSTMPeephole[Float](inputSize, hiddenSize)
 model = LSTMPeephole(inputSize, hiddenSize)
 ```
 
-Description
+Long Short Term Memory architecture with peephole.
+Ref. A.: http://arxiv.org/pdf/1303.5778v1 (blueprint for this module)
+B. http://web.eecs.utk.edu/~itamar/courses/ECE-692/Bobby_paper1.pdf
+C. http://arxiv.org/pdf/1503.04069v1.pdf
+D. https://github.com/wojzaremba/lstm
+
+- param inputSize the size of each input vector
+- param hiddenSize Hidden unit size in the LSTM
+- param  p is used for [[Dropout]] probability. For more details about
+           RNN dropouts, please refer to
+           [RnnDrop: A Novel Dropout for RNNs in ASR]
+           (http://www.stat.berkeley.edu/~tsmoon/files/Conference/asru2015.pdf)
+           [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks]
+           (https://arxiv.org/pdf/1512.05287.pdf)
+- param wRegularizer: instance of [[Regularizer]]
+                   (eg. L1 or L2 regularization), applied to the input weights matrices.
+- param uRegularizer: instance [[Regularizer]]
+          (eg. L1 or L2 regularization), applied to the recurrent weights matrices.
+- param bRegularizer: instance of [[Regularizer]]
+          applied to the bias.
 
 **Scala example:**
 ```scala
