@@ -6,7 +6,7 @@ val model = CMulTable[Float]()
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = CMulTable()
 ```
 
 Description
@@ -37,5 +37,13 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+model = CMulTable()
+t1 = np.random.randn(5)
+t2 = np.random.randn(5)
+input = [t1, t2]
+model.forward(input)
+```
+output is
+```
+array([ 3.83480358, -1.08372796,  0.08163583, -1.92096496,  0.39564416], dtype=float32)
 ```
