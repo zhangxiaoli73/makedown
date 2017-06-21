@@ -9,7 +9,14 @@ val model = LogSoftMax[Float]()
 model = LogSoftMax()
 ```
 
-Description
+The [[LogSoftMax]] module applies a LogSoftMax transformation to the input data
+which is defined as:
+```
+f_i(x) = log(1 / a exp(x_i))
+where a = sum_j[exp(x_j)]
+```
+The input given in `forward(input)` must be either
+a vector (1D tensor) or matrix (2D tensor).
 
 **Scala example:**
 ```scala
