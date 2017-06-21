@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = L1HingeEmbeddingCriterion[Float](0.6)
 ```
 **Python:**
 ```python
@@ -32,5 +32,11 @@ output: Float = 0.84714425
 
 **Python example:**
 ```python
-Python Code
+model = L1HingeEmbeddingCriterion(0.6)
+input1 = np.random.randn(2)
+input2 = np.random.randn(2)
+input = [input1, input2]
+target = [np.array([1.0])]
+
+output = model.forward(input, target)
 ```
