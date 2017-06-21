@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = LSTMPeephole[Float](inputSize, hiddenSize)
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = LSTMPeephole(inputSize, hiddenSize)
 ```
 
 Description
@@ -57,7 +57,6 @@ seqLength = 5
 batchSize = 1
                
 input = np.random.randn(batchSize, seqLength, inputSize)
-
 rec = Recurrent(hiddenSize)
 model = Sequential().add(rec.add(LSTMPeephole(inputSize, hiddenSize))).add(TimeDistributed(Linear(hiddenSize, outputSize)))
 output = model.forward(input)
