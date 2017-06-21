@@ -6,7 +6,7 @@ val model = SoftPlus[Float]()
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = SoftPlus()
 ```
 
 Apply the SoftPlus function to an n-dimensional input tensor.
