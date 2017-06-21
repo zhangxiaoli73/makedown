@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = LogSoftMax[Float]()
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = LogSoftMax()
 ```
 
 Description
@@ -16,9 +16,9 @@ Description
 import com.intel.analytics.bigdl.nn._
 import com.intel.analytics.bigdl.tensor.Tensor
 
-val module = LogSoftMax[Float]()
+val model = LogSoftMax[Float]()
 val input = Tensor[Float](4, 10).rand()
-val output = module.forward(input)
+val output = model.forward(input)
 ```
 output is
 ```
@@ -32,5 +32,18 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+model = LogSoftMax()
+input = np.random.randn(4, 10)
+output = model.forward(input)
+```
+output is
+```
+array([[-2.71494865, -1.94257474, -3.11852407, -1.23062432, -2.46524668,
+        -3.04385233, -2.50393724, -2.94146872, -3.42119932, -1.86910367],
+       [-3.47281766, -1.87250924, -1.78490853, -4.42017174, -3.09390163,
+        -1.90380895, -3.61078787, -1.01130319, -3.57430983, -3.80523968],
+       [-1.20955157, -2.81982231, -1.93510222, -2.77889538, -3.94818759,
+        -2.5525887 , -1.46124649, -4.911623  , -2.73293018, -3.38049865],
+       [-2.79008269, -2.73434305, -3.92586136, -3.16623569, -2.66140938,
+        -4.14181805, -1.25464666, -1.69758749, -3.08269215, -1.55173862]], dtype=float32)
 ```
