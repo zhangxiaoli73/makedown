@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = SoftPlus[Float]()
 ```
 **Python:**
 ```python
@@ -16,9 +16,9 @@ Description
 import com.intel.analytics.bigdl.nn._
 import com.intel.analytics.bigdl.tensor.Tensor
 
-val layer = SoftPlus[Float]()
+val model = SoftPlus[Float]()
 val input = Tensor[Float](2, 3, 4).rand()
-val output = layer.forward(input)
+val output = model.forward(input)
 ```
 output is
 ```
@@ -37,5 +37,17 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 ```
 **Python example:**
 ```python
-Python Code
+model = SoftPlus()
+input = np.random.randn(2, 3, 4)
+output = model.forward(input)
+```
+output is
+```
+array([[[ 0.09477428,  1.28491187,  0.65586591,  1.1293689 ],
+        [ 0.37589449,  0.71724343,  0.31651947,  0.84333116],
+        [ 0.11157955,  0.91336811,  0.8104986 ,  1.13143706]],
+
+       [[ 0.59171015,  0.20237219,  2.18983054,  0.8992095 ],
+        [ 0.38286343,  0.14144027,  0.28824955,  1.80149364],
+        [ 0.46423054,  0.52238309,  1.34621668,  1.61121106]]], dtype=float32)
 ```
