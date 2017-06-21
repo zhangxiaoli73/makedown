@@ -6,7 +6,7 @@ val model = Index[Float](1)
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = Index(1)
 ```
 
 Description
@@ -40,5 +40,14 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+input1 = np.random.randn(3)
+input2 = np.array([1, 2, 2, 3])
+input = [input1, input2]
+
+model = Index(1)
+output = model.forward(input)
+```
+output is
+```
+array([-0.34750494,  0.31201595,  0.31201595,  0.96357429], dtype=float32)
 ```
