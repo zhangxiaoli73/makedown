@@ -9,7 +9,12 @@ val model = SoftPlus[Float]()
 Python cod, how to new an instance
 ```
 
-Description
+Apply the SoftPlus function to an n-dimensional input tensor.
+SoftPlus function: 
+```
+f_i(x) = 1/beta * log(1 + exp(beta * x_i))
+```
+- param beta Controls sharpness of transfer function
 
 **Scala example:**
 ```scala
