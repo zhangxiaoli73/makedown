@@ -38,10 +38,10 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 **Python example:**
 ```python
 model = CMulTable()
-t1 = np.random.randn(5)
-t2 = np.random.randn(5)
-input = [t1, t2]
-model.forward(input)
+input1 = np.random.randn(5)
+input2 = np.random.randn(5)
+input = [input1, input2]
+output = model.forward(input)
 ```
 output is
 ```
