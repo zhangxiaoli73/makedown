@@ -6,7 +6,7 @@ val criterion = AbsCriterion[Float]()
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+criterion = AbsCriterion()
 ```
 
 Description
@@ -28,5 +28,15 @@ output: Float = 0.33056465
 
 **Python example:**
 ```python
-Python Code
+import findspark
+findspark.init()
+
+criterion = AbsCriterion()
+input = np.array([0.9682213801388531,
+0.35258855644097503,
+0.04584479998452568,
+-0.21781499692588918,
+-1.02721844006879])
+target = np.array([1, 2, 3, 2, 1])
+criterion.forward(input, target)
 ```
