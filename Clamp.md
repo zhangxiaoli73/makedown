@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val model = Clamp[Float](-10, 10)
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = Clamp(-10, 10)
 ```
 
 Description
@@ -36,5 +36,15 @@ output: com.intel.analytics.bigdl.tensor.Tensor[Float] =
 
 **Python example:**
 ```python
-Python Code
+model = Clamp(-10, 10)
+input = np.random.randn(2, 2, 2)
+output = model.forward(input)
+```
+output is
+```
+array([[[ 0.01126319,  0.02390726],
+        [-1.15782905, -0.36142176]],
+
+       [[-2.31166029,  1.21416366],
+        [-0.28188094, -0.24606584]]], dtype=float32)
 ```
