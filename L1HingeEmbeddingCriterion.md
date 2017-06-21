@@ -6,10 +6,11 @@ val model = L1HingeEmbeddingCriterion[Float](0.6)
 ```
 **Python:**
 ```python
-Python cod, how to new an instance
+model = L1HingeEmbeddingCriterion(0.6)
 ```
 
-Description
+Creates a criterion that measures the loss given an input ``` x = {x1, x2} ```,
+a table of two Tensors, and a label y (1 or -1):
 
 **Scala example:**
 ```scala
