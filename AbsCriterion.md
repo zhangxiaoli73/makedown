@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-Scala code, how to new an instance
+val criterion = AbsCriterion[Float]()
 ```
 **Python:**
 ```python
@@ -13,7 +13,17 @@ Description
 
 **Scala example:**
 ```scala
-Scala code
+import com.intel.analytics.bigdl.nn._
+import com.intel.analytics.bigdl.tensor.Tensor
+val criterion = AbsCriterion[Float]()
+
+val input = Tensor[Float](3).rand()
+val target = Tensor[Float](3).rand()
+val output = criterion.forward(input, target)
+```
+output is
+```
+output: Float = 0.33056465
 ```
 
 **Python example:**
