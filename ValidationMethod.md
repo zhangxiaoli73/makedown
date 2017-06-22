@@ -21,5 +21,8 @@ val output = Tensor(Storage(Array[Float](
 
     val validation = new Top1Accuracy[Float]()
     val result = validation(output, target)
-    val test = new AccuracyResult(4, 8)
+```
+result is
+
+```
 ```
