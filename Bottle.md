@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-val model = Bottle[Float](Linear[Float](10, 2), 2, 2)
+val model = Bottle[T](module, nInputDim, nOutputDim)
 ```
 **Python:**
 ```python
-model = Bottle(Linear(10, 2), 2, 2)
+model = Bottle(module, nInputDim, nOutputDim)
 ```
 
 Bottle allows varying dimensionality input to be forwarded through any module that accepts input of nInputDim dimensions, and generates output of nOutputDim dimensions.
