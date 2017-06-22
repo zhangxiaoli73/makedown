@@ -22,7 +22,8 @@ val model = L1HingeEmbeddingCriterion[Float](0.6)
 val input1 = Tensor[Float](2).rand()
 val input2 = Tensor[Float](2).rand()
 val input = T(input1, input2)
-val target = T(1.0f)
+val target = Tensor[Float](1)
+target(Array(1)) = 1.0f
 
 val output = model.forward(input, target)
 ```
