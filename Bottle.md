@@ -61,7 +61,7 @@ model = Bottle(Linear(10, 2), 2, 2)
 model.add(Linear(10, 2))
 
 input = np.random.randn(4, 5, 10)
-model.forward(input)
+output = model.forward(input)
 ```
 output is
 ```
