@@ -25,4 +25,5 @@ val output = Tensor(Storage(Array[Float](
 result is
 
 ```
+result: com.intel.analytics.bigdl.optim.ValidationResult = Accuracy(correct: 4, count: 8, accuracy: 0.5)
 ```
