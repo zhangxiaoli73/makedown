@@ -2,18 +2,16 @@
 
 **Scala:**
 ```scala
-val model = Clamp[Float](-10, 10)
+val model = Clamp[T](min, max)
 ```
 **Python:**
 ```python
-model = Clamp(-10, 10)
+model = Clamp(min, max)
 ```
 
 A kind of hard tanh activition function with integer min and max
 - param min min value
 - param max max value
-- param ev numeric operator
-- tparam T numeric type
 
 **Scala example:**
 ```scala
