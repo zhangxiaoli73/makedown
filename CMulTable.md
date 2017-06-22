@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-val model = CMulTable[Float]()
+val model = CMulTable[T]()
 ```
 **Python:**
 ```python
