@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-val model = SoftmaxWithCriterion[Float]()
+val model = SoftmaxWithCriterion[T](ignoreLabel, normalizeMode)
 ```
 **Python:**
 ```python
-model = SoftmaxWithCriterion()
+model = SoftmaxWithCriterion(ignoreLabel, normalizeMode)
 ```
 
 Computes the multinomial logistic loss for a one-of-many classification task,
