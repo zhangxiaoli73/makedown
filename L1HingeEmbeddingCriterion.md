@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-val model = L1HingeEmbeddingCriterion[Float](0.6)
+val model = L1HingeEmbeddingCriterion[Float](margin)
 ```
 **Python:**
 ```python
-model = L1HingeEmbeddingCriterion(0.6)
+model = L1HingeEmbeddingCriterion(margin)
 ```
 
 Creates a criterion that measures the loss given an input ``` x = {x1, x2} ```,
