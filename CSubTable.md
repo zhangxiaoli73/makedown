@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-val model = CSubTable[Float]()
+val model = CSubTable[T]()
 ```
 **Python:**
 ```python
