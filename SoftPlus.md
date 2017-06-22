@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-val model = SoftPlus[Float]()
+val model = SoftPlus[T]()
 ```
 **Python:**
 ```python
