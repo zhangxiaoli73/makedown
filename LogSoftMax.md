@@ -2,7 +2,7 @@
 
 **Scala:**
 ```scala
-val model = LogSoftMax[Float]()
+val model = LogSoftMax[T]()
 ```
 **Python:**
 ```python
