@@ -2,11 +2,11 @@
 
 **Scala:**
 ```scala
-val model = Index[Float](1)
+val model = Index[T](dimension)
 ```
 **Python:**
 ```python
-model = Index(1)
+model = Index(dimension)
 ```
 
 Applies the Tensor index operation along the given dimension.
