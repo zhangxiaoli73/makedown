@@ -38,7 +38,11 @@ model = L1HingeEmbeddingCriterion(0.6)
 input1 = np.random.randn(2)
 input2 = np.random.randn(2)
 input = [input1, input2]
-target = [np.array([1.0])]
+target = np.array([1.0])
 
 output = model.forward(input, target)
+```
+output is
+```
+
 ```
